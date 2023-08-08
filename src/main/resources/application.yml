@@ -1,0 +1,12 @@
+spring:
+   datasource:
+      url: jdbc:mysql://localhost:3306/jpademo
+      username: root
+      password: root
+      dbcp2:
+       connection-factory-class-name: com.yash.demo.Dao.MyCustomBasicDataSourceFactory
+   jpa:
+      database-platform: org.hibernate.dialect.MySQLDialect
+      hibernate:
+         ddl-auto: update # Set to "update" to apply schema changes automatically
+ 
